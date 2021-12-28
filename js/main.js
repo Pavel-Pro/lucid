@@ -5,7 +5,7 @@
 		$('.burger__item:last-child').toggleClass('burger__item-bottom');
 	});
 	$('.testimonials__slider').slick({
-		// infinite: true,
+		arrows: false,
      	dots: true,
       	slidesToShow: 2,
       	slidesToScroll: 2,

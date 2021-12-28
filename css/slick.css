@@ -54,7 +54,7 @@
     top: 0;
     left: 0;
 
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
@@ -98,10 +98,10 @@
 {
     pointer-events: none;
 }
-.slick-initialized .slick-slide
+/*.slick-initialized .slick-slide
 {
     display: block;
-}
+}*/
 .slick-loading .slick-slide
 {
     visibility: hidden;

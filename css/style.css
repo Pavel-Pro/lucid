@@ -333,6 +333,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	padding: 3.75em 0 7em;
+	height: 47vh;
 }
 .testimonials__chapter {
 	text-align: center;
@@ -347,8 +348,8 @@ body {
 }
 .testimonials__slide {
 	flex: 0 1 35%;
-	height: inherit;
 	display: flex;
+	height: inherit;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -392,9 +393,6 @@ body {
 	.header__phone {
 		font-size: 1.2rem;
 	}
-	.main__container {
-		padding-top: 0em;
-	}
 	.chapter {
 		margin-bottom: 1.2em;
 	}
@@ -437,6 +435,13 @@ body {
 	.main__text {
 		width: 40%;
 		margin-bottom: 1.5em;
+	}
+	.testimonials {
+		padding: 3em 0 7em;
+		height: 65vh;
+	}
+	.testimonials__slider {
+		margin-top: 6.5em;
 	}
 }
 @media (max-width: 1024px) {
