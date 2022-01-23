@@ -10,9 +10,10 @@
       	slidesToShow: 2,
       	slidesToScroll: 2,
       	responsive: [{
-      		breakpoint: 750,
+      		breakpoint: 640,
 		    	settings: {
-		    		arrows: false,
+		    		slidesToShow: 1,
+		    		slidesToScroll: 1,
 		    	}
 		    }
 	    ]
