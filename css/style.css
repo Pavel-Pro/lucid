@@ -111,6 +111,45 @@ body {
 	font-size: 1.5rem;
 	text-decoration: none;
 }
+.login__title {
+	margin-left: 2em;
+	font-size: 1.2rem;
+	text-decoration: underline;
+	cursor: pointer;
+	position: relative;
+}
+.form-login {
+	display: none;
+	position: absolute;
+    top: 90%;
+    right: 4%;
+}
+.form-login input {
+	width: 8em;
+}
+.form-login__inner {
+	display: flex;
+	justify-content: space-between;
+	width: 12em;
+	margin-bottom: 0.5em ;
+}
+.form-text__inner {
+	text-align: right;
+	margin-right: 1em;
+}
+.form-login__button {
+	margin-top: 1em;
+	margin-left: auto;
+	width: 3em;
+	display: block;
+	background-color: var(--blue-c);
+	font-family: var(--button-f-f);
+	border: none;
+	color: rgb(255, 255, 255);
+	padding: 0.4em 1.2em;
+	border-radius: 3px;
+	cursor: pointer;
+}
 .main {
 	background-image: url(../images/main__bg.png);
 	background-repeat: no-repeat;
@@ -407,6 +446,36 @@ body {
 }
 .download-button__item ~ .main__btn-action {
 	margin-right: 0;
+}
+.fag {
+	background-color: rgb(237, 237, 237);
+}
+.fag__chapter {
+	padding-top: 3.7em;
+	text-align: center;
+}
+.faq__items {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 5em 0 3em;
+}
+.faq__item {
+	background-color: rgb(255, 255, 255);
+	border-radius: 30px;
+	padding: 1em 2em;
+}
+.faq__item + .faq__item {
+	margin-top: 1.5em;
+}
+.faq__title {
+	color: var(--title-c);
+	font-size: 2rem;
+	margin-bottom: 0.8em;
+	cursor: pointer;
+}
+.faq__text {
+	color: var(--title-c);
+	line-height: 1.5;
 }
 .plans__chapter {
 	text-align: center;

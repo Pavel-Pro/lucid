@@ -18,24 +18,15 @@
 		    }
 	    ]
 	});
-	// $(window).on('scroll', function(){
-	// 	var menuShow = $('.veneered').offset().top;
-	// 	var currentHeight = $(document).scrollTop();
-	// 	if (currentHeight >= menuShow) {
-	// 		$('.main').addClass('fixed');
-	// 		$('.header').addClass('fixed');
-	// 	} else {
-	// 		$('.main').removeClass('fixed');
-	// 		$('.header').removeClass('fixed');
-	// 	}
-	// });
-	// $('.header-menu__item.dropdown').hover(function(){
-	// 	if($(this).children('.sub-menu__inner').is(':visible')){
-	// 		$(this).children('.sub-menu__inner').addClass('sub-menu__inner_opacity');
-	// 	}
-	// 	$(this).children('.sub-menu__inner').fadeIn();
-	// },
-	// function(){
-	// 	$(this).children('.sub-menu__inner').delay(333).removeClass('sub-menu__inner_opacity').fadeOut();
-	// }
-// );
+	$('.answer').hide();
+	$('.faq__title').click(function () {
+		var $answer = $(this).next('.answer');
+		if ($answer.is(':hidden')) {
+			$answer.slideDown();
+		}else {
+			$answer.slideUp();
+		}
+	});
+	$('.login__title').click(function(evt) {
+		$('.form-login').slideToggle(200);
+	});
