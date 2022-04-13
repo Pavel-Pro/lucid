@@ -131,7 +131,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 12em;
-	margin-bottom: 0.5em ;
+	margin-bottom: 1.2em;
 }
 .form-text__inner {
 	text-align: right;
@@ -150,6 +150,20 @@ body {
 	border-radius: 3px;
 	cursor: pointer;
 }
+label#form-login__name-error {
+	position: absolute;
+	left: 0;
+    bottom: 70px;
+    color: rgb(255 0 0);
+    font-size: 0.8rem;
+}
+label#form-login__password-error {
+	position: absolute;
+	left: 0;
+    bottom: 30px;
+    color: rgb(255 0 0);
+    font-size: 0.8rem;
+} 
 .main {
 	background-image: url(../images/main__bg.png);
 	background-repeat: no-repeat;

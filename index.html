@@ -6,6 +6,7 @@
 	<title>lucid</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="jqueryui/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -49,12 +50,12 @@
 					<span class="login__title">Login</span>
 					<form action="" class="form-login">
 						<div class="form-login__inner">
-							<label for="form-login__name" class="form-text__inner">Name:</label>
-							<input type="text" name="form-login__name" id="form-login__name" class="form-login__name">
+							<label for="form-login__name" name="name" class="form-text__inner">Name:</label>
+							<input type="text" name="name" id="form-login__name" class="form-login__name" title="Пожалуйста введите ваше имя">
 						</div>
 						<div class="form-login__inner">
 							<label for="form-login__password" class="form-text__inner">Password:</label>
-							<input type="text" name="form-login__password" id="form-login__password" class="form-login__password">
+							<input type="text" name="password" id="form-login__password" class="form-login__password" title="Пожулайста введите пароль">
 						</div>
 						<input type="submit" name="button" class="form-login__button" value="Submit">
 					</form>
@@ -404,8 +405,13 @@
 			</div>
 		</div>
 	</footer>
+	<div class="model" title="Приветствую">
+		<p class="model__text">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Ea, ipsam saepe, voluptatibus blanditiis aliquam non quos inventore, illum ipsum recusandae possimus porro. Nemo inventore dolore iste aliquam similique quibusdam, voluptates.</p>
+	</div>
 	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="jqueryui/jquery-ui.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -30,3 +30,31 @@
 	$('.login__title').click(function(evt) {
 		$('.form-login').slideToggle(200);
 	});
+$('.form-login').validate({
+	rules: {
+		name: {
+			required: true,
+			rangelength: [2,12]
+		},
+		password: {
+			required: true,
+			rangelength: [5,15]
+		}
+	},
+	messages: {
+		name: {
+			required: 'Введите имя',
+			rangelength: 'Имя должен содержеть не меньше 5 символов.'
+		},
+		password: {
+			required: 'Введите пароль',
+			rangelength: 'Пароль должен содержеть не меньше 5 символов.'
+		}
+	}
+});
+$('.model').dialog({
+	modal: true,
+	resizable: false,
+	shoe: true,
+	hide: true
+});
